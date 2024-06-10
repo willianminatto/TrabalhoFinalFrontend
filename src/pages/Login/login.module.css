@@ -24,7 +24,6 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
-    color: #0575E6;
 }
 
 #rightContainer > h2{
@@ -35,12 +34,14 @@
     width: 60%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
 }
 
 .fieldSection{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .formLabel{
@@ -48,3 +49,29 @@
     z-index: 1;
     cursor: pointer;
 }
+
+#error{
+    height: 20px;
+    background-color: rgb(244, 213, 213);
+    color: red;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 10px;
+    line-height: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:900px) {
+    
+    .formLabel{
+        margin-right: -30px;
+    }
+
+    .formLabel > img{
+        width: 20px;
+    }    
+}
+
+
+
