@@ -1,0 +1,50 @@
+#container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+#leftContainer{
+    width: 50%;
+    background: url('./assets/bg.svg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+#rightContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    color: #0575E6;
+}
+
+#rightContainer > h2{
+    color: #333333;
+}
+
+#loginForm{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.fieldSection{
+    display: flex;
+    align-items: center;
+}
+
+.formLabel{
+    margin-right: -40px;
+    z-index: 1;
+    cursor: pointer;
+}
