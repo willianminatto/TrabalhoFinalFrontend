@@ -11,7 +11,7 @@ function ServiceForm() {
 
     const saveProduct = async (e) => {
         e.preventDefault();
-        await fetch("http://localhost:3000/service", {
+        await fetch("http://localhost:3000/servicos", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

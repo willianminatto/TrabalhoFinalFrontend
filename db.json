@@ -1,7 +1,27 @@
 {
-    "login": [
-      { "id": "1", "username": "Luizada", "email":"luizada@gmail.com",  "password":"Teste" },
-      { "id": "2", "username": "another title","email":"luizada@gmail.com", "password": "123123123" }
-    ]
-  }
-  
+  "login": [
+    {
+      "id": "1",
+      "username": "Luizada",
+      "email": "luizada@gmail.com",
+      "password": "Teste"
+    },
+    {
+      "id": "2",
+      "username": "another title",
+      "email": "luizada@gmail.com",
+      "password": "123123123"
+    }
+  ],
+  "produtos": [],
+  "servicos": [],
+  "cliente": [
+    {
+      "id": "7816",
+      "name": "luiz",
+      "CPF": "21212121",
+      "contact": "121212",
+      "adress": "dsadsad"
+    }
+  ]
+}

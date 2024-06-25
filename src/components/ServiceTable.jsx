@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
-import classes from './ProductTable.module.css'
+import classes from './tables.module.css'
 
 export default function ServiceTable() {
     const [serviceList, setServiceList] = useState([])
 
     const reqServiceList = async () => {
         try {
-            const response = await fetch('http://localhost:3000/service', {
+            const response = await fetch('http://localhost:3000/servicos', {
                 method: 'GET',
             });
             const data = await response.json();
@@ -18,7 +18,7 @@ export default function ServiceTable() {
     };
 
     const deleteService = async (id) => {
-        await fetch(`http://localhost:3000/service/${id}`, {
+        await fetch(`http://localhost:3000/servicos/${id}`, {
             method: 'DELETE'
         }).then(() => {
             reqServiceList()
@@ -65,6 +65,7 @@ export default function ServiceTable() {
                             <td>{service.typeservice}</td>
                             <td>{service.prestador}</td>
                             <td className={classes.actions}>
+                                <button onClick={() => deleteService(service.id)}>Editar</button>
                                 <button onClick={() => deleteService(service.id)}>Excluir</button>
                             </td>
                         </tr>

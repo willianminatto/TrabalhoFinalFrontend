@@ -1,6 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Login } from "./pages/Login";
-import { Home } from "./pages/Home";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { Service } from "./pages/Service";
+import { Product } from "./pages/Products";
+import { Customer } from "./pages/Customer";
 
 export const RoutesApp = createBrowserRouter([
   {
@@ -8,7 +12,33 @@ export const RoutesApp = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "/home",
-    element: <Home />,
+    path: "/service",
+    element: (
+      <>
+        <Header />
+        <Service />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/product",
+    element: (
+      <>
+        <Header />
+        <Product />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/customer",
+    element: (
+      <>
+        <Header />
+        <Customer />
+        <Footer />
+      </>
+    ),
   },
 ]);

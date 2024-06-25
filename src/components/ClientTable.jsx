@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import classes from './ProductTable.module.css'
+import classes from './tables.module.css'
 
 export default function ClientTable() {
     const [clientList, setClientList] = useState([])
@@ -52,6 +52,7 @@ export default function ClientTable() {
                             <td>{client.contact}</td>
                             <td>{client.adress}</td>
                             <td className={classes.actions}>
+                                <button onClick={() => deleteClient(client.id)}>Editar</button>
                                 <button onClick={() => deleteClient(client.id)}>Excluir</button>
                             </td>
                         </tr>

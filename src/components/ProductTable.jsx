@@ -1,4 +1,4 @@
-import classes from './ProductTable.module.css'
+import classes from './tables.module.css'
 import { useEffect, useState } from 'react'
 
 export default function ProductTable() {
@@ -60,6 +60,7 @@ export default function ProductTable() {
                             <td>{currencyFormatter(prod.pricep)}</td>
                             <td>{numberFormatter(prod.stock)}</td>
                             <td className={classes.actions}>
+                                <button onClick={() => deleteProduct(prod.id)}>Editar</button>
                                 <button onClick={() => deleteProduct(prod.id)}>Excluir</button>
                             </td>
                         </tr>
